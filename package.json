@@ -8,7 +8,11 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "testUpdtSnap": "jest -u"
+    "testUpdtSnap": "jest -u",
+    "detox:android_build": "detox build --configuration android.emu.debug",
+    "detox:android_test": "detox test --configuration android.emu.debug",
+    "detox:ios_build": "detox build --configuration ios.sim.debug",
+    "detox:ios_test": "detox test --configuration ios.sim.debug"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.6.1",

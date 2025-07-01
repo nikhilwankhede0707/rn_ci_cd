@@ -51,7 +51,7 @@ module.exports = {
     attached: {
       type: 'android.attached',
       device: {
-        adbName: '.*',
+        adbName: '192.168.56.101:5555',
       },
     },
     emulator: {
