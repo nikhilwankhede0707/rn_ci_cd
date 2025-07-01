@@ -2,10 +2,7 @@
 describe('App Lanuch Testing', () => {
   beforeAll(async () => {
     await device.launchApp();
-  });
-
-  beforeEach(async () => {
-    await device.reloadReactNative();
+    // await device.launchApp();
   });
 
   it('should have logo on SplashScreen', async () => {
