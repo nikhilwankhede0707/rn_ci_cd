@@ -1,6 +1,6 @@
 import React, { useRef, FC } from "react";
-import { StyleSheet, Dimensions, View, Animated } from "react-native";
-import Swiper from "react-native-swiper";
+import { StyleSheet, Dimensions, View } from "react-native";
+import Swiper from "react-native-swiper"; 
 import { Colors } from "../utils/Colors";
 import OnboardItem from "../components/global/OnboardItem";
 import { navigate } from "../utils/NavigationUtil";

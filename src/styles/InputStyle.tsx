@@ -7,7 +7,6 @@ import {
   normalizeModerately,
   normalizeWidth,
 } from "../utils/Scaling";
-import { useTheme } from "@react-navigation/native";
 import { FONTS } from "../utils/Fonts";
 
 const InputStyle = StyleSheet.create({

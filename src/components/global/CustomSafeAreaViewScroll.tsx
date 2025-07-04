@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { SafeAreaView, StyleSheet, ScrollView, Platform, ViewStyle } from "react-native";
+import { SafeAreaView, StyleSheet, ScrollView,ViewStyle } from "react-native";
 
 interface CustomSafeAreaScrollViewProps {
   children: ReactNode;

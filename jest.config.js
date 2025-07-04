@@ -9,7 +9,7 @@ module.exports = {
     'node_modules/(?!(react-native|react-native-swiper|react-redux|react-native-linear-gradient|@react-navigation|@react-native|@react-native/assets)/)',
   ],
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
-  testPathIgnorePatterns: ['/node_modules/', '/android/', '/ios/'],
+  testPathIgnorePatterns: ['/node_modules/', '/android/', '/ios/','/e2e/'],
   collectCoverage: true,
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',

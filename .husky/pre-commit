@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+
+npm run lint
+npm run test
+
+# In Production It Will Be Used Now Not Using For The Purpose Of Faster Commiting.
+# npm run detox:android_build
+# npm run detox:android_test
+# npm run detox:ios_build
+# npm run detox:ios_test
