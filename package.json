@@ -16,7 +16,7 @@
     "prepare": "husky install",
     "detox:genymotion_debug":"detox test --configuration android.genycloud.debug -l verbose --workers 2 --record-logs all --take-screenshots all",
     "detox:genymotion_release":"detox test --configuration android.genycloud.release -l verbose --workers 2 --record-logs all --take-screenshots all",
-      "format": "prettier --write ."
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.6.1",

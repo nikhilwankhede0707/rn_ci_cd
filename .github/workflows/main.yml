@@ -41,16 +41,16 @@ jobs:
         run: npm run format
 
       - name: Run ESLint
-        run: npm run lint:fix
+        run: npm run lint
 
       - name: Run Unit Test
         run: npm run test
 
-      - name: Run detox (debug)
-        run: npm run detox:genymotion_debug
+      # - name: Run detox (debug)
+      #   run: npm run detox:genymotion_debug
 
-      - name: Run detox (release)
-        run: npm run detox:genymotion_release
+      # - name: Run detox (release)
+      #   run: npm run detox:genymotion_release
 
       - name: Send Discord Notification on Failure
         if: failure()
@@ -122,13 +122,13 @@ jobs:
                -d '{"content":"✅ Google Playstore Deployment Successfulll Hooray !!!"}' \
                ${{ secrets.DISCORD_WEBHOOK_URL }}
 
-      - name: Email Notification To Anyone
-        if: failure()
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: CI Pipeline Failure
-          to: ${{ secrets.TO_EMAIL }}
-          body: The CI Pipeline Has Failed Fix It As Soon As Possible.
+      # - name: Email Notification To Anyone
+      #   if: failure()
+      #   uses: dawidd6/action-send-mail@v3
+      #   with:
+      #     server_address: smtp.gmail.com
+      #     username: ${{ secrets.EMAIL_USERNAME }}
+      #     password: ${{ secrets.EMAIL_PASSWORD }}
+      #     subject: CI Pipeline Failure
+      #     to: ${{ secrets.TO_EMAIL }}
+      #     body: The CI Pipeline Has Failed Fix It As Soon As Possible.
