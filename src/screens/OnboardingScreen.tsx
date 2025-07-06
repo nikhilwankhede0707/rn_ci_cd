@@ -8,7 +8,7 @@ import { navigate } from "../utils/NavigationUtil";
 const w = Dimensions.get("window").width;
 const h = Dimensions.get("window").height;
 
-const OnBoardingScreen: React.FC = () => {
+const OnBoardingScreen: FC = () => {
   const swiperRef = useRef<Swiper>(null);
   const goToNextSlide = () => {
     swiperRef?.current?.scrollBy(1);
