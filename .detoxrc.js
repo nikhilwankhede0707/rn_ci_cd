@@ -83,6 +83,7 @@ module.exports = {
     'android.att.release': {
       device: 'attached',
       app: 'android.release',
+      
     },
     
     'android.emu.debug': {
