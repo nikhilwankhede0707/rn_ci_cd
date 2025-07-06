@@ -2,6 +2,7 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npm run lint 
+
 npm run test
 
 # In Production It Will Be Used Now Not Using For The Purpose Of Faster Commiting.

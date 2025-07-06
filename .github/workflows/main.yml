@@ -100,11 +100,11 @@ jobs:
       - name: Install Fastlane
         run: sudo gem install fastlane -NV
 
-      - name: Deploy In The Google Playstore
-        run: |
-          echo "$GOOGLE_PLAY_SERVICE_ACCOUNT_JSON" > android/fastlane/playstore-credentials.json
-          cd android
-          fastlane playstore
+      # - name: Deploy In The Google Playstore
+      #   run: |
+      #     echo "$GOOGLE_PLAY_SERVICE_ACCOUNT_JSON" > android/fastlane/playstore-credentials.json
+      #     cd android
+      #     fastlane playstore
 
       - name: Send Discord Notification on Failure
         if: failure()
