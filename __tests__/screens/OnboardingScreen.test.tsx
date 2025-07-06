@@ -1,9 +1,8 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
-import OnBoardingScreen from '../../src/screens/OnBoardingScreen';
+import OnBoardingScreen from '../../src/screens/OnboardingScreen';
+
 import { navigate} from '../../src/utils/NavigationUtil';
-import { current } from '@reduxjs/toolkit';
-import Swiper from 'react-native-swiper';
 
 // Mock the navigate function
 jest.mock('../../src/utils/NavigationUtil', () => ({
