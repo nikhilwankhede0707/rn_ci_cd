@@ -39,7 +39,7 @@ module.exports = {
         'android/app/build/outputs/apk/androidTest/release/app-release-androidTest.apk',
       build:
         'cd android && gradlew.bat assembleRelease assembleAndroidTest -DtestBuildType=release',
-    },
+    }
   },
   devices: {
     simulator: {
@@ -60,6 +60,12 @@ module.exports = {
         avdName: 'Pixel_9_Pro',
       },
     },
+    "genymotion.emulator.uuid": {
+      type: "android.genycloud",
+      device: {
+            recipeUUID: "2e7c77b9-b2a8-4e7f-9289-b3cb05adac5c",
+      },
+},
   },
   configurations: {
     'ios.sim.debug': {
@@ -86,5 +92,13 @@ module.exports = {
       device: 'emulator',
       app: 'android.release',
     },
+    'android.genycloud.release': {
+      device: 'genymotion.emulator.uuid',
+      app: 'android.release',
+    },
+    'android.genycloud.debug': {
+      device: 'genymotion.emulator.uuid',
+      app: 'android.debug',
+    }
   },
 };

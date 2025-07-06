@@ -9,11 +9,13 @@
     "start": "react-native start",
     "test": "jest",
     "testUpdtSnap": "jest -u",
-    "detox:android_build": "detox build --configuration android.emu.debug",
-    "detox:android_test": "detox test --configuration android.emu.debug",
+    "detox:android_build": "detox build --configuration android.att.debug",
+    "detox:android_test": "detox test --configuration android.att.debug",
     "detox:ios_build": "detox build --configuration ios.sim.debug",
     "detox:ios_test": "detox test --configuration ios.sim.debug",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "detox:genymotion_debug":"detox test --configuration android.genycloud.debug -l verbose --workers 2 --record-logs all --take-screenshots all",
+    "detox:genymotion_release":"detox test --configuration android.genycloud.release -l verbose --workers 2 --record-logs all --take-screenshots all"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.6.1",
