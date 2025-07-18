@@ -1,4 +1,4 @@
-grname: CI and CD
+name: CI and CD
 
 on:
   push:
