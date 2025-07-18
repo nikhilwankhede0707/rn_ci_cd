@@ -85,7 +85,6 @@ module.exports = {
       app: 'android.release',
       
     },
-    
     'android.emu.debug': {
       device: 'emulator',
       app: 'android.debug',

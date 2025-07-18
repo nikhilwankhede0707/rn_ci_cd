@@ -5,8 +5,6 @@ import { persistor, store } from '../../src/redux/store';
 import { registerUser } from '../../src/redux/reducers/userSlice';
 import RegisterScreen from '../../src/screens/RegisterScreen';
 import { goBack, navigate } from '../../src/utils/NavigationUtil';
-
-
 jest.mock('../../src/utils/NavigationUtil', () => ({
     navigate: jest.fn(),
     goBack:jest.fn(),
