@@ -5,6 +5,7 @@ import { prepareNavigation, resetAndNavigate } from '../utils/NavigationUtil';
 
 const SplashScreen: FC = () => {
   useEffect(() => {
+    
     prepareNavigation();
     setTimeout(() => {
       resetAndNavigate('OnBoardingScreen');
