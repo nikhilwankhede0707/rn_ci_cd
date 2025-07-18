@@ -1,4 +1,4 @@
-name: CI and CD
+grname: CI and CD
 
 on:
   push:
@@ -12,6 +12,10 @@ jobs:
   lint-and-test:
     runs-on: ubuntu-latest
     steps:
+      - name: Greet The Pusher
+        uses: lethisa/greetings@v1.0.3
+        with:
+          who-to-great: "Thank You Very Much."
       - name: Checkout Code
         uses: actions/checkout@v2
 
