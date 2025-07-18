@@ -12,6 +12,10 @@ jobs:
   lint-and-test:
     runs-on: ubuntu-latest
     steps:
+      - name: Greet The Pusher
+        uses: lethisa/greetings@v1.0.3
+        with:
+          who-to-great: "Thank You Very Much."
       - name: Checkout Code
         uses: actions/checkout@v2
 
@@ -27,7 +31,7 @@ jobs:
           node-version: 22.17.0
 
       - name: Cache Node.Js modules
-        uses: actions/cache@v3
+        uses: actions/cache@v4.2.3
         with:
           path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
