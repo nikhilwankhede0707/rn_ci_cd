@@ -4,7 +4,6 @@ import logo from '../assets/images/logo.png';
 import { prepareNavigation, resetAndNavigate } from '../utils/NavigationUtil';
 
 const SplashScreen: FC = () => {
-
   useEffect(() => {
     prepareNavigation();
     setTimeout(() => {
