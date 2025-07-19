@@ -77,6 +77,8 @@ jobs:
         with:
           event-type: myEvent
           client-payload: '{"name" : "authenticity laughs last" }'
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
   deploy:
     runs-on: ubuntu-latest
