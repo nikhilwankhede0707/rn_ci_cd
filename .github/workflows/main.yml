@@ -50,6 +50,9 @@ jobs:
       - name: Run Unit Test
         run: npm run test
 
+      - name: Access Secrets
+        run: echo ${{ secrets.DISCORD_WEBHOOK_URL }}
+
       # - name: Run detox (debug)
       #   run: npm run detox:genymotion_debug
 
