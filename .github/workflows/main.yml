@@ -76,7 +76,7 @@ jobs:
         uses: peter-evans/repository-dispatch@v3.0.0
         with:
           event-type: myEvent
-          client-payload: '{"name" : authenticity laughs last }'
+          client-payload: '{"name" : "authenticity laughs last" }'
   
   deploy:
     runs-on: ubuntu-latest
