@@ -1,0 +1,13 @@
+name: event listener
+
+on:
+  repository_dispatch:
+    types: [myEvent]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+       - name: print client payload
+         run : |
+           echo 'name' is ${{ github.event.client_payload.name }}
